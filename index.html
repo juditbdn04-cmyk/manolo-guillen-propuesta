@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Manolo Guillén · Peluquería y estética en Sant Cugat desde 1989</title>
+<meta name="description" content="Salón de peluquería y estética de alto standing en Sant Cugat del Vallès. Instituto Kérastase, diagnóstico capilar, color, rituales, estética facial y corporal. Pide cita desde nuestra app.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Manolo Guillén",
+  "url": "https://www.manologuillen.com/",
+  "telephone": "+34936753506",
+  "foundingDate": "1989",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Pla del Vinyet, local 11",
+    "postalCode": "08172",
+    "addressLocality": "Sant Cugat del Vallès",
+    "addressRegion": "Barcelona",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 41.470009, "longitude": 2.089617 },
+  "sameAs": [
+    "https://instagram.com/manolo_guillen/",
+    "https://instagram.com/mg_es.estetica/",
+    "https://instagram.com/thebarberbymg/",
+    "https://www.facebook.com/ManoloGuillenestilistas"
+  ]
+}
+</script>
+<style>
+  :root {
+    --ink: #141414;
+    --ink-soft: #3a3a3a;
+    --muted: #77716a;
+    --paper: #faf8f5;
+    --paper-2: #f1ece5;
+    --line: #e2dbd1;
+    --gold: #a8875a;
+    --gold-dark: #8a6d45;
+    --serif: "Cormorant Garamond", Georgia, serif;
+    --sans: "Jost", system-ui, -apple-system, sans-serif;
+    --max: 1180px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { font-family: var(--sans); font-weight: 300; color: var(--ink); background: var(--paper); line-height: 1.7; font-size: 17px; -webkit-font-smoothing: antialiased; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+  .eyebrow { font-size: 12px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.12; }
+  h2 { font-size: clamp(34px, 4.6vw, 54px); margin: 12px 0 20px; }
+  h3 { font-size: 26px; }
+  .lead { font-size: 19px; color: var(--ink-soft); max-width: 640px; }
+  section { padding: 110px 0; }
+
+  .btn { display: inline-flex; align-items: center; gap: 10px; padding: 15px 30px; font: 500 13px/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; text-decoration: none; border: 1px solid currentColor; transition: background .25s, color .25s, border-color .25s; cursor: pointer; }
+  .btn-gold { background: var(--gold); border-color: var(--gold); color: #fff; }
+  .btn-gold:hover { background: var(--gold-dark); border-color: var(--gold-dark); }
+  .btn-ghost { color: #fff; }
+  .btn-ghost:hover { background: #fff; color: var(--ink); }
+  .btn-dark { color: var(--ink); }
+  .btn-dark:hover { background: var(--ink); color: #fff; }
+
+  /* Header */
+  header { position: fixed; inset: 0 0 auto; z-index: 50; transition: background .3s, box-shadow .3s; }
+  header.solid { background: rgba(20,20,20,.96); box-shadow: 0 1px 0 rgba(255,255,255,.06); }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 76px; }
+  .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: #fff; }
+  .brand .mg { width: 42px; height: 42px; border: 1.5px solid #fff; display: grid; place-items: center; font: 500 20px/1 var(--sans); letter-spacing: -.02em; }
+  .brand .name { font-family: var(--serif); font-size: 22px; letter-spacing: .06em; }
+  .menu { display: flex; align-items: center; gap: 30px; list-style: none; }
+  .menu a { color: rgba(255,255,255,.85); text-decoration: none; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; }
+  .menu a:hover { color: #fff; }
+  .menu .btn { padding: 12px 22px; color: #fff; }
+  .burger { display: none; background: none; border: 0; color: #fff; cursor: pointer; padding: 8px; }
+
+  /* Hero */
+  .hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; background: #050505 url("img/manologuillen3-1500x530.jpg") 70% center / cover no-repeat; color: #fff; padding: 120px 0 80px; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,5,5,.92) 0%, rgba(5,5,5,.6) 45%, rgba(5,5,5,.05) 75%); }
+  .hero .wrap { position: relative; width: 100%; }
+  @media (min-width: 981px) { .hero { min-height: 700px; height: 86vh; max-height: 820px; background-position: right center; } }
+  .hero h1 { font-size: clamp(44px, 7vw, 86px); max-width: 640px; margin: 18px 0 24px; }
+  .hero h1 em { color: #d8bd92; }
+  .hero p { font-size: 19px; max-width: 470px; color: rgba(255,255,255,.82); margin-bottom: 38px; }
+  .hero .ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+
+  /* Trust strip */
+  .trust { background: var(--ink); color: #fff; padding: 34px 0; }
+  .trust ul { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+  .trust strong { display: block; font: 400 30px/1.1 var(--serif); color: #d8bd92; }
+  .trust span { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.7); }
+
+  /* About */
+  .about .grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 80px; align-items: center; }
+  .about .photos { position: relative; }
+  .about .photos img:first-child { width: 88%; aspect-ratio: 4/3.2; object-fit: cover; }
+  .about .photos img:last-child { position: absolute; right: 0; bottom: -60px; width: 52%; aspect-ratio: 1; object-fit: cover; border: 10px solid var(--paper); }
+  .about p + p { margin-top: 18px; }
+  .signature { font: italic 400 26px/1.3 var(--serif); color: var(--gold-dark); margin-top: 30px; }
+
+  /* Services */
+  .services { background: var(--paper-2); }
+  .head { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 56px; flex-wrap: wrap; }
+  .tabs { display: flex; border: 1px solid var(--ink); }
+  .tabs button { background: none; border: 0; padding: 13px 26px; font: 500 12px/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; cursor: pointer; color: var(--ink); }
+  .tabs button[aria-selected="true"] { background: var(--ink); color: #fff; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .cards[hidden] { display: none; }
+  .card { background: var(--paper); display: flex; flex-direction: column; }
+  .card .ph { aspect-ratio: 4/3; overflow: hidden; background: #ddd; }
+  .card .ph img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+  .card:hover .ph img { transform: scale(1.04); }
+  .card .body { padding: 28px 28px 30px; display: flex; flex-direction: column; flex: 1; }
+  .card h3 { margin-bottom: 10px; }
+  .card p { color: var(--ink-soft); font-size: 16px; }
+  .card details { margin-top: auto; padding-top: 18px; }
+  .card summary { list-style: none; cursor: pointer; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; font-weight: 500; color: var(--gold-dark); }
+  .card summary::-webkit-details-marker { display: none; }
+  .card summary::after { content: " +"; }
+  .card details[open] summary::after { content: " –"; }
+  .card ul { list-style: none; margin-top: 14px; font-size: 15px; color: var(--ink-soft); }
+  .card li { padding: 9px 0; border-top: 1px solid var(--line); }
+  .card li b { font-weight: 500; color: var(--ink); }
+
+  /* Pricing logic */
+  .pricing .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 50px; }
+  .tier { background: var(--paper); padding: 44px 36px; }
+  .tier .tag { font: 500 12px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+  .tier h3 { margin: 14px 0 12px; font-size: 30px; }
+  .tier p { color: var(--ink-soft); font-size: 16px; }
+  .tier .big { font: 400 46px/1 var(--serif); color: var(--ink); margin-top: 20px; }
+  .note { margin-top: 26px; font-size: 14px; color: var(--muted); }
+
+  /* Gifts */
+  .gifts { background: var(--ink); color: #fff; }
+  .gifts .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .gifts .lead { color: rgba(255,255,255,.78); }
+  .gifts ul { list-style: none; margin: 30px 0 36px; }
+  .gifts li { padding: 18px 0; border-top: 1px solid rgba(255,255,255,.14); display: flex; justify-content: space-between; gap: 20px; }
+  .gifts li span:last-child { color: #d8bd92; font-family: var(--serif); font-size: 21px; white-space: nowrap; }
+  .gifts img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+
+  /* Gallery */
+  .gallery-grid { display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: 210px; gap: 14px; margin-top: 50px; }
+  .gallery-grid figure { overflow: hidden; position: relative; }
+  .gallery-grid img { width: 100%; height: 100%; object-fit: cover; }
+  .gallery-grid figcaption { position: absolute; left: 0; bottom: 0; right: 0; padding: 30px 18px 14px; color: #fff; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; background: linear-gradient(transparent, rgba(0,0,0,.6)); }
+  .g1 { grid-column: span 4; grid-row: span 2; }
+  .g2, .g3 { grid-column: span 2; }
+  .g4, .g5, .g6 { grid-column: span 2; }
+
+  /* Team */
+  .team { background: var(--paper-2); }
+  .team-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0 40px; margin-top: 50px; }
+  .member { padding: 22px 0; border-top: 1px solid var(--line); }
+  .member b { display: block; font: 500 24px/1.2 var(--serif); }
+  .member span { font-size: 14px; color: var(--muted); }
+  .member small { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-dark); margin-top: 4px; }
+
+  /* Booking */
+  .booking { text-align: center; background: linear-gradient(rgba(10,10,10,.82), rgba(10,10,10,.82)), url("img/elsalon4.jpg") center / cover; color: #fff; }
+  .booking .lead { margin: 0 auto 40px; color: rgba(255,255,255,.8); }
+  .stores { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 30px; }
+  .store { display: inline-flex; align-items: center; gap: 12px; padding: 12px 24px; border: 1px solid rgba(255,255,255,.5); text-decoration: none; color: #fff; text-align: left; transition: background .25s, color .25s; }
+  .store:hover { background: #fff; color: var(--ink); }
+  .store svg { width: 26px; height: 26px; fill: currentColor; }
+  .store small { display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; opacity: .8; }
+  .store b { font-weight: 500; font-size: 18px; }
+  .or { font-size: 15px; color: rgba(255,255,255,.7); }
+  .or a { white-space: nowrap; color: #d8bd92; text-decoration: none; font-weight: 400; }
+
+  /* Contact */
+  .contact .grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 60px; }
+  .contact dl { margin-top: 30px; }
+  .contact dt { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-top: 24px; }
+  .contact dd { font-size: 18px; }
+  .contact dd a { text-decoration: none; border-bottom: 1px solid var(--line); }
+  .map { min-height: 420px; border: 0; width: 100%; height: 100%; filter: grayscale(1) contrast(1.05); }
+
+  footer { background: var(--ink); color: rgba(255,255,255,.6); padding: 50px 0; font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; }
+  footer nav { display: flex; gap: 24px; }
+  footer a { text-decoration: none; }
+  footer a:hover { color: #fff; }
+
+  /* Brands */
+  .brands { padding: 46px 0; border-bottom: 1px solid var(--line); }
+  .brands .wrap { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; justify-content: space-between; }
+  .brands .eyebrow { color: var(--muted); }
+  .brands ul { list-style: none; display: flex; flex-wrap: wrap; gap: 14px 44px; align-items: baseline; }
+  .brands li { font: 500 22px/1 var(--serif); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+
+  /* Promotions */
+  .promos .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 50px; }
+  .promo { border: 1px solid var(--line); padding: 26px 24px; background: var(--paper); }
+  .promo .m { font: 500 12px/1 var(--sans); letter-spacing: .2em; text-transform: uppercase; color: var(--gold); }
+  .promo p { font: 400 22px/1.25 var(--serif); margin-top: 12px; }
+  .promo small { display: block; font-size: 14px; color: var(--muted); margin-top: 8px; }
+  .promo.now { background: var(--ink); color: #fff; border-color: var(--ink); }
+  .promo.now .m::after { content: " · ahora"; color: #d8bd92; }
+  .promo.now small { color: rgba(255,255,255,.65); }
+  .promo.past { opacity: .45; }
+
+  /* Barber */
+  .barber { background: linear-gradient(90deg, rgba(10,10,10,.95) 35%, rgba(10,10,10,.55)), url("img/manologuillen4-1500x530.jpg") center 30% / cover; color: #fff; padding: 110px 0; }
+  .barber .wrap { display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
+  .barber .lead { color: rgba(255,255,255,.75); }
+  .barber .links { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* Draft badge: this is a design proposal, not the official site */
+  .draft { position: fixed; left: 16px; bottom: 16px; z-index: 70; background: rgba(20,20,20,.88); color: #d8bd92; font: 500 11px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; padding: 9px 14px; border: 1px solid rgba(216,189,146,.4); pointer-events: none; }
+  @media (max-width: 640px) { .draft { bottom: 72px; left: 12px; } }
+
+  /* Sticky mobile CTA */
+  .sticky-cta { display: none; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+
+  @media (max-width: 980px) {
+    section { padding: 80px 0; }
+    .menu { position: fixed; inset: 76px 0 auto; flex-direction: column; gap: 0; background: rgba(20,20,20,.98); padding: 10px 24px 30px; transform: translateY(-120%); transition: transform .35s; align-items: stretch; }
+    .menu.open { transform: none; }
+    .menu li { border-bottom: 1px solid rgba(255,255,255,.08); }
+    .menu a { display: block; padding: 16px 0; }
+    .menu .btn { margin-top: 18px; justify-content: center; }
+    .burger { display: block; }
+    .about .grid, .gifts .grid, .contact .grid { grid-template-columns: 1fr; gap: 50px; }
+    .about .photos { margin-bottom: 50px; }
+    .cards, .pricing .grid { grid-template-columns: 1fr 1fr; }
+    .team-list { grid-template-columns: 1fr 1fr; }
+    .trust ul { grid-template-columns: 1fr 1fr; row-gap: 30px; }
+    .promos .grid { grid-template-columns: 1fr 1fr; }
+    .gifts img { aspect-ratio: 16/10; }
+  }
+  @media (max-width: 640px) {
+    body { font-size: 16px; padding-bottom: 64px; }
+    .wrap { padding: 0 16px; }
+    .hero { background-position: 78% center; align-items: flex-end; }
+    .hero::before { background: linear-gradient(0deg, rgba(5,5,5,.95) 30%, rgba(5,5,5,.35) 75%, rgba(5,5,5,.2)); }
+    .hero .ctas .btn { flex: 1; justify-content: center; padding: 15px 12px; letter-spacing: .14em; white-space: nowrap; }
+    .brand .name { font-size: 19px; }
+    .cards, .pricing .grid { grid-template-columns: 1fr; }
+    .tabs { width: 100%; }
+    .tabs button { flex: 1; padding: 13px 10px; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; }
+    .g1 { grid-column: span 2; grid-row: span 2; }
+    .g2, .g3, .g4, .g5, .g6 { grid-column: span 1; }
+    .team-list { grid-template-columns: 1fr; }
+    .brands li { font-size: 18px; }
+    .sticky-cta { grid-template-columns: 1fr 1fr 1fr; }
+    .sticky-cta { display: grid; grid-template-columns: 1fr 1fr; position: fixed; inset: auto 0 0; z-index: 60; }
+    .sticky-cta a { padding: 20px 10px; text-align: center; font: 500 12px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; text-decoration: none; }
+    .sticky-cta a:first-child { background: var(--ink); color: #fff; }
+    .sticky-cta a:nth-child(2) { background: #1f7a4d; color: #fff; }
+    .sticky-cta a:last-child { background: var(--gold); color: #fff; }
+  }
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Manolo Guillén, inicio">
+      <span class="mg">mg</span><span class="name">Manolo Guillén</span>
+    </a>
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <ul class="menu" id="menu">
+      <li><a href="#salon">El salón</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#promociones">Promociones</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="btn btn-gold" href="#cita" data-book>Pedir cita</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Sant Cugat del Vallès · desde 1989</span>
+      <h1>Peluquería de autor, <em>hecha a tu medida</em></h1>
+      <p>Diagnóstico personalizado, rituales Kérastase y estética avanzada en un salón donde cada detalle está pensado para ti.</p>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#cita" data-book>Pedir cita</a>
+        <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="trust">
+    <div class="wrap">
+      <ul>
+        <li><strong>1989</strong><span>Más de 35 años de oficio</span></li>
+        <li><strong>Kérastase</strong><span>Instituto oficial</span></li>
+        <li><strong>Formación</strong><span>Continua con Montibello</span></li>
+        <li><strong>Gratis</strong><span>Asesoría y diagnóstico</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="brands">
+    <div class="wrap">
+      <span class="eyebrow">Trabajamos con</span>
+      <ul>
+        <li>Kérastase</li>
+        <li>Oribe</li>
+        <li>QÍQÍ</li>
+        <li>L'Oréal Professionnel</li>
+        <li>Montibello</li>
+        <li>GHD</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="about" id="salon">
+    <div class="wrap grid">
+      <div class="photos reveal">
+        <img src="img/elsalon4.jpg" alt="Recepción del salón Manolo Guillén con el logotipo mg" loading="lazy">
+        <img src="img/elsalon1.jpg" alt="Zona de lavado y rituales Kérastase" loading="lazy">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Nuestra historia</span>
+        <h2>Más que una peluquería</h2>
+        <p class="lead">Manolo Guillén abrió el salón en 1989, después de formarse en Llongueras y dirigir equipos. Desde el primer día la idea fue la misma: conocer e interpretar a cada cliente.</p>
+        <p>Durante años hemos impartido formación por toda España con Montibello y Wella Professional, y hoy seguimos formándonos: la última, en corte y color especializados en cabello rizado con Montibello. Nuestras instalaciones, renovadas, tienen espacios diferenciados para rituales de recuperación, rituales sensoriales y rituales VIP, para mujer y para hombre, y nuestra propia barbería, The Barber by MG.</p>
+        <p>Tómate un café, descubre las nuevas colecciones o deja a los peques en su rincón con una película mientras nos ocupamos de tu estilo.</p>
+        <p class="signature">Un salón con calor humano.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <span class="eyebrow">Servicios</span>
+          <h2>Belleza con diagnóstico</h2>
+          <p class="lead">Analizamos tu cuero cabelludo y tu cabello con microcámara antes de recomendarte nada.</p>
+        </div>
+        <div class="tabs" role="tablist">
+          <button role="tab" aria-selected="true" aria-controls="tab-pelu" id="t-pelu">Peluquería</button>
+          <button role="tab" aria-selected="false" aria-controls="tab-este" id="t-este">Estética</button>
+        </div>
+      </div>
+
+      <div class="cards" id="tab-pelu" role="tabpanel" aria-labelledby="t-pelu">
+        <article class="card reveal">
+          <div class="ph"><img src="img/asesoriaydiagnostico-1.jpg" alt="Asesoría y diagnóstico capilar" loading="lazy"></div>
+          <div class="body">
+            <h3>Asesoría y diagnóstico</h3>
+            <p>Asesoría gratuita y diagnóstico con microcámara capilar de 200 aumentos, con el respaldo de Kérastase y Oribe.</p>
+            <details><summary>Ver detalle</summary><ul>
+              <li><b>Asesoría</b> (gratuita): potenciamos tu belleza sin cambiar apenas tus hábitos.</li>
+              <li><b>Diagnóstico capilar</b>: estado del cuero cabelludo y la fibra, y el tratamiento más adecuado.</li>
+              <li><b>Novedad Chronologiste</b> de Kérastase: sérum rejuvenecedor para el cuero cabelludo.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/coloracion.jpg" alt="Coloración" loading="lazy"></div>
+          <div class="body">
+            <h3>Coloración</h3>
+            <p>Del color sin amoniaco al balayage más delicado, siempre según el visagismo de cada persona.</p>
+            <details><summary>Ver técnicas</summary><ul>
+              <li><b>Color Confort</b>: sin amoniaco, 6 semanas de hidratación.</li>
+              <li><b>Color Basic</b> y <b>BB Color</b> tono sobre tono.</li>
+              <li><b>Color Denuée</b>: base agua, brillo 100% natural.</li>
+              <li><b>Balayage, Foilyage y Reverse Balayage</b>.</li>
+              <li><b>Puntos de luz y reflejos 3D</b>.</li>
+              <li><b>Degradado a mano alzada</b>: transición suave y natural, sin cortes.</li>
+              <li><b>Color Perfecto</b>: 50% de descuento si repones el color cada 15 días.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/forma-alisados-y-keratinas.jpg" alt="Alisados y keratinas" loading="lazy"></div>
+          <div class="body">
+            <h3>Forma, alisados y keratinas</h3>
+            <p>Adiós al encrespado: QÍQÍ, alisado GOA, keratinas y tratamientos 100% orgánicos.</p>
+            <details><summary>Ver tratamientos</summary><ul>
+              <li><b>QÍQÍ</b>: varios niveles de liso, apto para cabellos tratados.</li>
+              <li><b>Alisado GOA</b>.</li>
+              <li><b>Keratina Exprés</b> y <b>Keratina Fusión</b> con botox capilar.</li>
+              <li><b>Alisado orgánico</b>: 35 activos naturales y 20 aceites esenciales.</li>
+              <li><b>Softy Mood</b>: sin frizz hasta 12 semanas.</li>
+              <li><b>Moldeado</b>: ondas y volumen permanentes.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/rituales.jpg" alt="Rituales capilares" loading="lazy"></div>
+          <div class="body">
+            <h3>Rituales capilares</h3>
+            <p>Somos Instituto Kérastase y especialistas en recuperar el cabello y el cuero cabelludo.</p>
+            <details><summary>Ver rituales</summary><ul>
+              <li><b>Fusio-Dose de Kérastase</b>: Concentré + Booster a medida tras el diagnóstico, en menos de 5 minutos.</li>
+              <li><b>Reparación, Nutrición, Elasticidad y Fusión</b>.</li>
+              <li><b>Rituales VIP</b> con ácido hialurónico, colágeno y activos botánicos para daños extremos.</li>
+              <li>Con Kérastase, QÍQÍ, Oribe y GHD.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/corte-de-autor-recogidos-extensiones.jpg" alt="Corte de autor y recogidos" loading="lazy"></div>
+          <div class="body">
+            <h3>Corte, recogidos y novias</h3>
+            <p>Visagismo aprendido con Claude Juillard, su creador: cada corte se diseña para tu rostro.</p>
+            <details><summary>Ver detalle</summary><ul>
+              <li><b>Corte</b> con estudio de formas, volúmenes y líneas.</li>
+              <li><b>Corte bordado</b>: elimina las puntas abiertas sin perder largo.</li>
+              <li><b>Flequillos</b>: recto, cortina, desfilado… el que encaje con tus facciones.</li>
+              <li><b>Secado</b> y estilismo con todo tipo de herramientas.</li>
+              <li><b>Recogidos</b> para eventos y bodas.</li>
+              <li><b>Novias y comuniones</b>: 20% de descuento contratando 4 o más servicios.</li>
+              <li><b>Extensiones</b>: clip, sándwich, cosidas, trenzados.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="ph"><img src="img/manologuillen1-1500x530.jpg" alt="Melena con ondas y movimiento" loading="lazy" style="object-position: 72% center"></div>
+          <div class="body">
+            <h3>Método Curly</h3>
+            <p>Corte y color especializados en cabello rizado: cada rizo es único y lo tratamos como tal.</p>
+            <details><summary>Ver detalle</summary><ul>
+              <li><b>Corte para rizos</b> según su forma, textura y movimiento.</li>
+              <li><b>Color para cabello rizado</b>, cuidando su salud.</li>
+              <li>Equipo formado con <b>Montibello</b>.</li>
+            </ul></details>
+          </div>
+        </article>
+      </div>
+
+      <div class="cards" id="tab-este" role="tabpanel" aria-labelledby="t-este" hidden>
+        <article class="card">
+          <div class="ph"><img src="img/facial.jpg" alt="Estética facial" loading="lazy"></div>
+          <div class="body">
+            <h3>Estética facial</h3>
+            <p>Rejuvenecimiento sin cirugía con tecnología avanzada y técnicas manuales japonesas.</p>
+            <details><summary>Ver tratamientos</summary><ul>
+              <li><b>HIFU</b>: ultrasonidos que tensan la piel y estimulan el colágeno.</li>
+              <li><b>Mesoterapia virtual</b> y <b>Binary Premium</b>.</li>
+              <li><b>Hollywood Peeling</b>: carbón vegetal y láser.</li>
+              <li><b>Masaje Kobido</b>, el lifting facial japonés.</li>
+              <li><b>Tratamientos personalizados</b> según tu piel.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph"><img src="img/pestanas.jpg" alt="Pestañas" loading="lazy"></div>
+          <div class="body">
+            <h3>Pestañas</h3>
+            <p>Extensiones pelo a pelo con adhesivo hipoalergénico, o lifting y color con efecto 3 meses.</p>
+            <details><summary>Ver detalle</summary><ul>
+              <li><b>Extensiones</b> sintéticas o naturales.</li>
+              <li><b>Lifting y color</b>: alarga y da espesor a tus pestañas naturales.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph"><img src="img/depilacion-web.jpg" alt="Depilación láser" loading="lazy"></div>
+          <div class="body">
+            <h3>Depilación</h3>
+            <p>Láser de diodo con Depil-Ice (−7 °C) para todo tipo de pieles, con tarifa plana.</p>
+            <details><summary>Ver detalle</summary><ul>
+              <li><b>Láser</b>: cualquier fototipo y color de vello (excepto canas).</li>
+              <li><b>Bono tarifa plana</b>: pregúntanos.</li>
+              <li><b>Cera tibia</b>: respeta la circulación y los capilares.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph"><img src="img/corporal.jpg" alt="Estética corporal" loading="lazy"></div>
+          <div class="body">
+            <h3>Estética corporal</h3>
+            <p>Binary Premium para flacidez, celulitis y remodelación corporal.</p>
+            <details><summary>Ver aplicaciones</summary><ul>
+              <li>Reafirmación dérmica y muscular, también posparto.</li>
+              <li>Celulitis, estrías y adiposidad localizada.</li>
+              <li>Bonos de 4, 8 o 10 sesiones.</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph"><img src="img/maquillaje.jpg" alt="Maquillaje" loading="lazy"></div>
+          <div class="body">
+            <h3>Maquillaje</h3>
+            <p>Maquillaje de novia, con aerógrafo para un acabado perfecto, o de fantasía.</p>
+            <details><summary>Ver detalle</summary><ul>
+              <li><b>Novia</b> con asesoramiento personal.</li>
+              <li><b>Aerógrafo</b>: acabado natural que unifica poros y marcas.</li>
+              <li><b>Fantasía</b>: carnaval, sesiones de fotos…</li>
+            </ul></details>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph"><img src="img/manicura-pedicura.jpg" alt="Manicura y pedicura" loading="lazy"></div>
+          <div class="body">
+            <h3>Manicura y pedicura</h3>
+            <p>Semipermanente con lámpara SkinHealth con IA, que protege tu piel de la luz LED.</p>
+            <details><summary>Ver detalle</summary><ul>
+              <li><b>Limar y pintar</b>, en tiempo récord.</li>
+              <li><b>Completa</b>, con esmalte de larga duración.</li>
+              <li><b>Semipermanente</b> y <b>gel permanente</b>.</li>
+              <li><b>Masculina</b> y <b>sin esmaltado</b>.</li>
+            </ul></details>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="promos" id="promociones">
+    <div class="wrap">
+      <span class="eyebrow">Promociones 2026</span>
+      <h2>Un año para cuidarte</h2>
+      <p class="lead">Planifica tu cita para aprovechar cada promoción.</p>
+      <div class="grid">
+        <div class="promo" data-m="1"><span class="m">Enero</span><p>20% en productos</p><small>+ 30 € de descuento en GHD</small></div>
+        <div class="promo" data-m="2"><span class="m">Febrero</span><p>25% en el corte</p><small>Pack corte + color o mechas + secado</small></div>
+        <div class="promo" data-m="3"><span class="m">Marzo</span><p>Ritual exprés gratis</p><small>Pack corte + color o mechas + secado. Y keratina −35% hasta el 15 de abril</small></div>
+        <div class="promo" data-m="5"><span class="m">Mayo</span><p>Diagnóstico capilar gratis</p><small>Descubre el estado real de tu cabello</small></div>
+        <div class="promo" data-m="9"><span class="m">Septiembre</span><p>Sella tus rituales</p><small>El último, gratis</small></div>
+        <div class="promo" data-m="10"><span class="m">Octubre</span><p>Keratina −35%</p><small>Hasta el 15 de noviembre</small></div>
+        <div class="promo" data-m="11"><span class="m">Noviembre</span><p>Black Friday</p><small>Descuentos especiales</small></div>
+        <div class="promo" data-m="12"><span class="m">Diciembre</span><p>Tarjetas regalo</p><small>Sin promociones, ideal para regalar belleza</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="precios">
+    <div class="wrap">
+      <span class="eyebrow">Precios</span>
+      <h2>Tú eliges tu estilista</h2>
+      <p class="lead">El precio de cada servicio depende del nivel del profesional que te atiende. Consulta las tarifas exactas en nuestra app al reservar.</p>
+      <div class="grid">
+        <div class="tier reveal">
+          <span class="tag">MVP</span>
+          <h3>Most Valuable Professional</h3>
+          <p>Nuestros profesionales con más años de experiencia en el mundo del estilismo.</p>
+        </div>
+        <div class="tier reveal">
+          <span class="tag">Rookie</span>
+          <h3>Talento joven</h3>
+          <p>Profesionales en sus primeros años, formados por nuestro equipo.</p>
+          <div class="big">−20%</div>
+        </div>
+        <div class="tier reveal">
+          <span class="tag">De 11 a 25 años</span>
+          <h3>Packs Jóvenes</h3>
+          <p>Hasta un 20% más económicos, y todos incluyen un ritual Kérastase personalizado.</p>
+          <div class="big">−20%</div>
+        </div>
+      </div>
+      <p class="note">Descuentos no acumulables entre sí.</p>
+    </div>
+  </section>
+
+  <section class="gifts" id="regalos">
+    <div class="wrap grid">
+      <div class="reveal">
+        <span class="eyebrow">Regalos y bonos</span>
+        <h2>Regala belleza</h2>
+        <p class="lead">Desde una relajación capilar hasta un día de cuidado integral. Adaptamos cada regalo a cada bolsillo y lo preparamos con mimo, listo para entregar.</p>
+        <ul>
+          <li><span>Tarjetas regalo</span><span>50 € · 70 € · 90 €</span></li>
+          <li><span>Cheque regalo Spa Capilar Japonés Akasha</span><span>con cajita</span></li>
+          <li><span>Bonos faciales y corporales</span><span>4 · 8 · 10 sesiones</span></li>
+          <li><span>Bono tarifa plana depilación láser</span><span>consúltanos</span></li>
+          <li><span>Packs de novia y comunión</span><span>−20%</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="tel:+34936753506">Pedir información</a>
+      </div>
+      <img class="reveal" src="img/manologuillen2-1500x530.jpg" alt="Clienta con maquillaje profesional" loading="lazy" style="object-position: 70% center">
+    </div>
+  </section>
+
+  <section class="gallery" id="espacio">
+    <div class="wrap">
+      <span class="eyebrow">El espacio</span>
+      <h2>Pensado hasta el último detalle</h2>
+      <div class="gallery-grid">
+        <figure class="g1"><img src="img/elsalon5.jpg" alt="Zona de estilismo" loading="lazy"><figcaption>Zona de estilismo</figcaption></figure>
+        <figure class="g2"><img src="img/elsalon3.jpg" alt="Interior del salón" loading="lazy"></figure>
+        <figure class="g3"><img src="img/elsalon2.jpg" alt="Rincón infantil" loading="lazy"><figcaption>Rincón infantil</figcaption></figure>
+        <figure class="g4"><img src="img/elsalon6.jpg" alt="Interior del salón" loading="lazy"></figure>
+        <figure class="g5"><img src="img/elsalon1.jpg" alt="Zona de rituales" loading="lazy"><figcaption>Rituales</figcaption></figure>
+        <figure class="g6"><img src="img/elsalon4.jpg" alt="Recepción" loading="lazy"><figcaption>Recepción</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="team" id="equipo">
+    <div class="wrap">
+      <span class="eyebrow">El equipo</span>
+      <h2>Personas que llevan décadas cuidándote</h2>
+      <div class="team-list">
+        <div class="member"><b>Manolo</b><span>Fundador</span><small>Desde 1989</small></div>
+        <div class="member"><b>Vicky</b><span>Directora y estilista</span><small>Desde 1987</small></div>
+        <div class="member"><b>Isabel</b><span>Estilista</span><small>Desde 1994</small></div>
+        <div class="member"><b>Chus</b><span>Directora creativa y estilista</span><small>Desde 2000</small></div>
+        <div class="member"><b>Sara</b><span>Directora de producción · Embajadora Kérastase</span><small>Desde 2002</small></div>
+        <div class="member"><b>Carmen</b><span>Recepción</span><small>Desde 2004</small></div>
+        <div class="member"><b>Mireia</b><span>Estilista</span><small>Desde 2005</small></div>
+        <div class="member"><b>Anna</b><span>Estilista</span><small>Desde 2011</small></div>
+        <div class="member"><b>Tania</b><span>Estilista</span><small>Desde 2016</small></div>
+        <div class="member"><b>Irene</b><span>Esteticista</span><small>Desde 2019</small></div>
+        <div class="member"><b>Sarita</b><span>Rookie</span><small>Desde 2019</small></div>
+        <div class="member"><b>Pilar</b><span>Equipo MG</span><small>Desde 2020</small></div>
+        <div class="member"><b>Cristina</b><span>Rookie</span><small>Desde 2021</small></div>
+        <div class="member"><b>William</b><span>Barbero · The Barber by MG</span><small>Desde 2023</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="barber">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Para él</span>
+        <h2>The Barber by MG</h2>
+        <p class="lead">Nuestra barbería, con el mismo cuidado de siempre. Corte, barba y estilo masculino en Sant Cugat.</p>
+      </div>
+      <div class="links">
+        <a class="btn btn-ghost" href="https://instagram.com/thebarberbymg/" target="_blank" rel="noopener">Ver en Instagram</a>
+        <a class="btn btn-gold" href="#cita" data-book>Reservar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking" id="cita">
+    <div class="wrap">
+      <span class="eyebrow">Reserva</span>
+      <h2>Pide tu cita desde el móvil</h2>
+      <p class="lead">Descarga la app de MG Manolo Guillén: elige servicio, estilista y hora cuando te vaya bien. También para The Barber by MG.</p>
+      <div class="stores">
+        <a class="store" href="https://apps.apple.com/es/app/mg-manolo-guill%C3%A9n/id1517632241" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.18-1.73-1.35-.14-2.64.8-3.33.8-.69 0-1.74-.78-2.87-.76-1.47.02-2.83.86-3.59 2.18-1.53 2.66-.39 6.6 1.1 8.75.73 1.05 1.6 2.24 2.73 2.2 1.1-.05 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.07 2.65-2.13.84-1.22 1.18-2.4 1.2-2.46-.03-.01-2.3-.88-2.32-3.5h.03zM14.2 6.13c.6-.73 1.01-1.75.9-2.76-.87.04-1.92.58-2.54 1.31-.56.64-1.05 1.68-.92 2.67.97.07 1.96-.5 2.56-1.22z"/></svg>
+          <span><small>Descárgala en</small><b>App Store</b></span>
+        </a>
+        <a class="store" href="https://play.google.com/store/apps/details?id=com.ibeauty.manologuillen" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3c-.2.2-.3.6-.3 1v17.4c0 .4.1.8.3 1l9.7-9.7-9.7-9.7zm10.6 10.6 2.7 2.7-11.4 6.5 8.7-9.2zm0-1.8L5.5 1.9l11.4 6.5-2.7 2.7zm3.8.1 3 1.7c.8.5.8 1.2 0 1.7l-3 1.7-3-3 3-2.1z"/></svg>
+          <span><small>Disponible en</small><b>Google Play</b></span>
+        </a>
+      </div>
+      <p class="or">¿Prefieres hablar con nosotros? Llámanos al <a href="tel:+34936753506">936 75 35 06</a> o escríbenos por <a href="https://wa.me/34693024852" target="_blank" rel="noopener">WhatsApp 693 02 48 52</a></p>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap grid">
+      <div>
+        <span class="eyebrow">Contacto</span>
+        <h2>Visítanos</h2>
+        <dl>
+          <dt>Dirección</dt>
+          <dd>Av. Pla del Vinyet, local 11 (frente a los cines)<br>08172 Sant Cugat del Vallès, Barcelona</dd>
+          <dt>Teléfono</dt>
+          <dd><a href="tel:+34936753506">936 75 35 06</a></dd>
+          <dt>WhatsApp</dt>
+          <dd><a href="https://wa.me/34693024852" target="_blank" rel="noopener">693 02 48 52</a></dd>
+          <dt>Síguenos</dt>
+          <dd><a href="https://instagram.com/manolo_guillen/" target="_blank" rel="noopener">@manolo_guillen</a><br><a href="https://instagram.com/mg_es.estetica/" target="_blank" rel="noopener">@mg_es.estetica</a><br><a href="https://instagram.com/thebarberbymg/" target="_blank" rel="noopener">@thebarberbymg</a><br><a href="https://www.facebook.com/ManoloGuillenestilistas" target="_blank" rel="noopener">Facebook</a></dd>
+        </dl>
+        <p style="margin-top:36px"><a class="btn btn-dark" href="https://www.google.com/maps/place/Peluquer%C3%ADa+Manolo+Guillen/@41.4699175,2.08933,19z" target="_blank" rel="noopener">Cómo llegar</a></p>
+      </div>
+      <iframe class="map" title="Mapa: Manolo Guillén en Sant Cugat" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Peluquer%C3%ADa%20Manolo%20Guillen%2C%20Av.%20Pla%20del%20Vinyet%2C%20Sant%20Cugat%20del%20Vall%C3%A8s&z=17&output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="y">2026</span> Manolo Guillén · Sant Cugat del Vallès</span>
+    <nav>
+      <a href="https://www.manologuillen.com/clausula-legal/">Aviso legal</a>
+      <a href="https://instagram.com/manolo_guillen/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/ManoloGuillenestilistas" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="draft">Propuesta de diseño</div>
+
+<nav class="sticky-cta" aria-label="Acciones rápidas">
+  <a href="tel:+34936753506">Llamar</a>
+  <a href="https://wa.me/34693024852" target="_blank" rel="noopener">WhatsApp</a>
+  <a href="#cita" data-book>Pedir cita</a>
+</nav>
+
+<script>
+  // Header turns solid after scrolling past the top
+  const header = document.querySelector('header');
+  const onScroll = () => header.classList.toggle('solid', window.scrollY > 40);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Mobile menu
+  const burger = document.querySelector('.burger'), menu = document.getElementById('menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.addEventListener('click', e => { if (e.target.tagName === 'A') { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); } });
+
+  // On phones, "Pedir cita" goes straight to the right app store
+  const ua = navigator.userAgent;
+  const store = /iPhone|iPad|iPod/.test(ua) ? 'https://apps.apple.com/es/app/mg-manolo-guill%C3%A9n/id1517632241'
+              : /Android/.test(ua) ? 'https://play.google.com/store/apps/details?id=com.ibeauty.manologuillen' : null;
+  if (store) document.querySelectorAll('[data-book]').forEach(a => { a.href = store; a.target = '_blank'; a.rel = 'noopener'; });
+
+  // Service tabs
+  const tabs = document.querySelectorAll('[role=tab]');
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(o => { const on = o === t; o.setAttribute('aria-selected', on); document.getElementById(o.getAttribute('aria-controls')).hidden = !on; });
+  }));
+
+  // Fade-in on scroll
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  // Promotions: highlight this month, dim the ones already past (2026 calendar)
+  const now = new Date(), month = now.getMonth() + 1;
+  if (now.getFullYear() === 2026) document.querySelectorAll('.promo').forEach(el => {
+    const m = +el.dataset.m;
+    if (m === month) el.classList.add('now'); else if (m < month) el.classList.add('past');
+  });
+</script>
+</body>
+</html>
